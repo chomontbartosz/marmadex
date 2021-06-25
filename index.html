@@ -50,32 +50,49 @@
 <!-- FIXED HEADER 
 ================================================== --> 
 <div class="fixed-header">
-    <img src="img/logo.png" class="logo">
+    <img src="img/logo.jpg" class="logo">
         <ul>
-            <li>Strona główna</li>
-            <li>O nas</li>
-            <li>Usługi</li>
-            <li>Opinie</li>
-            <li>Realizacje</li>
-            <li>Kontakt</li>
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Opinie</a></li>
+            <li><a href="#">Realizacje</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
 </div>
     
 <!-- MOBILE FIXED MENU 
 ================================================== --> 
-
+<div class="mobile-header">
+    <div class="mobile-logo-container">
+            <img src="img/logo.jpg" class="mobile-logo">
+            <span class="hamburger" onclick="mobileMenu()">
+            X
+            </span>
+        </div>
+        <ul id="mobile-menu">
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Usługi</a></li>
+            <li><a href="#">Opinie</a></li>
+            <li><a href="#">Realizacje</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+</div>
 
 <!-- BANNER GŁÓWNY
 ================================================= -->
 <div class="sekcja-glowna">
-    <h1>Banner główny</h1>
+    <div class="overlay">
+        <h1>Banner główny</h1>
+    </div>
 </div>
     
 <!-- O NAS 
 ================================================== --> 
 <div class="sekcja-o-nas">
-    <div class="sekcja-o-nas-lewa">x</div>
-    <div class="sekcja-o-nas-prawa">
+    <div class="sekcja-o-nas-lewa col-4">x</div>
+    <div class="sekcja-o-nas-prawa col-8">
         <h2>O nas</h2>
         <p>Quisque placerat consequat finibus. Curabitur semper sodales orci pellentesque vehicula. Nullam augue sem, aliquam quis elit eu, viverra mattis urna. Duis ligula lorem, vehicula nec cursus porta, congue vel sem. Aliquam rhoncus vestibulum orci a lacinia. Cras nec turpis et est facilisis lacinia et a mi. Aliquam bibendum iaculis augue, molestie pulvinar mi pharetra quis. Maecenas suscipit ipsum at ex ultrices pharetra. Proin ultrices sit amet dolor quis dignissim. Nunc elit risus, euismod at tincidunt quis, faucibus a metus. Fusce ut fermentum ligula. Aenean volutpat felis quam, id pretium dui interdum quis. Suspendisse vestibulum aliquam nisl, vel pharetra turpis interdum lobortis. Vestibulum efficitur rutrum ante, porta consequat nulla lacinia vestibulum. In pellentesque mauris nec nulla vestibulum, quis scelerisque ex finibus.
         </p>
@@ -96,6 +113,17 @@
     <img src="img/blank-600-325.webp">
     <img src="img/blank-600-325.webp">
     <img src="img/blank-600-325.webp">
+</div>
+
+<!-- REFERENCJE
+================================================== --> 
+<div class="sekcja-referencje">
+    <h2>Referencje</h2>
+    <div class="referencje-kontener">
+        <img src="img/blank-600-325.webp">
+        <img src="img/blank-600-325.webp">
+        <img src="img/blank-600-325.webp">
+    </div>
 </div>
     
 <!-- OPINIE
@@ -144,7 +172,16 @@
 
 
 <!-- Javascripts -->
-
+<script type="text/javascript">
+    function mobileMenu() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
     
 </body>
