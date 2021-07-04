@@ -1,0 +1,708 @@
+/* Reset domyślnych styli przeglądarki */
+*, *::before, *::after {
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1;
+    vertical-align: baseline;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #161616;
+    font-size: 1rem;
+}
+
+h1{
+    
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    color: orangered;
+}
+
+ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+/* Fixed header */
+
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: #424242;
+    padding: 10px 0;
+}
+
+.fixed-header ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.fiex-header ul li a {
+    color: #ff9800;
+}
+
+.fixed-header ul li a:hover {
+    color: #ffc947;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* Mobile header */
+
+.mobile-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #424242;
+    padding: 0 0;
+}
+
+.mobile-header ul {
+    width:100%;
+    text-align: center;
+}
+.mobile-header ul li {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.mobile-header ul li:hover {
+    background: #6d6d6d;
+}
+
+.mobile-header ul li a {
+    color: #ff9800;
+}
+
+.mobile-logo-container {
+    width: 100%;
+    padding: 10px 20px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-logo {
+    max-width: 150px;
+}
+
+.hamburger {
+    color: #fff;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* Sekcja główna */
+
+.sekcja-glowna {
+width:100%;
+height:100vh;
+background-image: url('img/baner.jpg');
+background-size: cover;
+background-position: bottom;
+color: #fff;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.overlay {
+background: rgba(0,0,0,0.3);
+width: 100%;
+height: 100%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Sekcja o nas */
+
+.sekcja-o-nas {
+width:100%;
+height:100vh;
+background: #6d6d6d;
+display:flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+background-repeat: no-repeat;
+background-position: -450% top;
+background-size: contain;
+}
+
+.sekcja-o-nas-lewa {
+    height:100%;
+    background:red;
+}
+
+.sekcja-o-nas-prawa {   
+    display:flex;
+    flex-direction: column;
+}
+
+/* Sekcja usługi */
+
+.sekcja-uslugi {
+width:100%;
+height:100vh;
+background: #eee;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.sekcja-uslugi h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.sekcja-uslugi img {
+    width:20%;
+    height: 40%;
+    padding: 20px 10px;
+}
+
+/* Sekcja referencje */
+
+.sekcja-referencje {
+width:100%;
+height:100vh;
+background: #6d6d6d;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.referencje-kontener {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.referencje-kontener img {
+    width: calc(100%/3);
+    padding: 0 20px;
+}
+
+/* Sekcja opinie */
+
+.sekcja-opinie {
+width:100%;
+height:70vh;
+background: #fff;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.opinie-kontener {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.opinie-kontener img {
+width: calc(100%/3);
+padding: 0 20px;
+}
+
+/* PODSTRONA KONTAKT "Banner główny" */
+
+.banner-glowny-kontakt {
+ width:100%;
+ height:70vh;
+ background-image: url("img/siedziba-firmy.jpg");
+ background-size: cover;
+ background-position: center;
+ color: #ff9800;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ text-shadow: 1px 1px 0 #000;
+    }
+
+ /* Sekcja dane adresowe + formularz */
+.sekcja-dane-formularz {
+    width:100%;
+    height:60vh;
+    display:flex;
+    background: #6d6d6d;
+    }
+ .sekcja-dane-formularz-lewa {
+    width:30%;
+    height:100%;
+    background: #ff9800;
+    text-align: center;
+    font-size: 17px;
+    line-height: 2;
+    padding: 90px 0;
+    }
+
+ .sekcja-dane-formularz-prawa {
+    width: 70%;
+    background: #6d6d6d;
+    margin: 100px 0 0 0px;
+    padding-left: 275px;
+
+    }
+    
+ .sekcja-dane-formularz-prawa input {
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 2px solid #ff9800;
+    padding: 8px;
+    width: 50%;       
+}
+ .box-dane{
+    margin: 10px 50px;
+	padding: 10px 50px;
+    background: #ffc947;
+    }
+
+ .sekcja-dane-formularz-prawa strong {
+	font-weight: 600;
+	line-height: 10px;
+}	
+
+.button {
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 16px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	background: #ff9800;
+	color: #424242;
+}
+/* Sekcja Mapa */
+.sekcja-mapa {
+    width:100%;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    }
+
+
+   /* PODSTRONA Realizacje  */
+
+.sekcja-realizacje {
+	width:100%;
+	height:100vh;
+	background-image: url("img/siedziba-firmy.jpg");
+	background-size: cover;
+	background-position: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sekcja-realizacje h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.sekcja-realizacje img {
+    width: 20%;
+    height: 35%;
+    padding: 20px 10px;
+}
+
+/* Stopka */
+.stopka {
+	width:100%;
+	height:30vh;
+	background: #ff9800;
+	height:30vh;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.stopka-kol-1, .stopka-kol-2, .stopka-kol-3, .stopka-kol-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.stopka a {
+    color: #424242;
+}
+
+.stopka a:hover {
+    color: #ddd;
+}
+
+/* Responsywność */
+
+/* EXTRA LARGE
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+ .container {
+        max-width: 1000px;
+    }
+    
+ .row {
+        flex-direction: row;
+    }
+    
+.col-xl-12 {
+    width: 100%;
+}
+
+.col-xl-10 {
+    width: 83.33%;
+}
+
+.col-xl-9 {
+    width: 75%;
+}
+
+.col-xl-8 {
+    width: 66.66%;
+}
+
+.col-xl-6 {
+    width: 50%;
+}
+
+.col-xl-4 {
+    width: 33.33%;
+}
+
+.col-xl-3 {
+    width: 25%;
+}
+
+.col-xl-2 {
+    width: 16.66%;
+}
+
+.col-xl-1 {
+    width: 8.33%;
+}
+    .mobile-header {
+        display: none;
+    }
+  
+}
+
+/* LARGE
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ .container {
+        max-width: 1000px;
+    }
+    
+ .row {
+        flex-direction: row;
+    }
+    
+.col-l-12 {
+    width: 100%;
+}
+
+.col-l-10 {
+    width: 83.33%;
+}
+
+.col-l-9 {
+    width: 75%;
+}
+
+.col-l-8 {
+    width: 66.66%;
+}
+
+.col-l-6 {
+    width: 50%;
+}
+
+.col-l-4 {
+    width: 33.33%;
+}
+
+.col-l-3 {
+    width: 25%;
+}
+
+.col-l-2 {
+    width: 16.66%;
+}
+
+.col-l-1 {
+    width: 8.33%;
+}
+    
+    .mobile-header {
+        display:none;
+    }
+  
+}
+
+/* MEDIUM
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .container {
+        max-width: 750px;
+    }
+    
+.row {
+        flex-direction: row;
+    }
+  
+.col-m-12 {
+    width: 100%;
+}
+
+.col-m-10 {
+    width: 83.33%;
+}
+
+.col-m-9 {
+    width: 75%;
+}
+
+.col-m-8 {
+    width: 66.66%;
+}
+
+.col-m-6 {
+    width: 50%;
+}
+
+.col-m-4 {
+    width: 33.33%;
+}
+
+.col-m-3 {
+    width: 25%;
+}
+
+.col-m-2 {
+    width: 16.66%;
+}
+
+.col-m-1 {
+    width: 8.33%;
+}
+    
+    .mobile-header {
+        display: none;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .container {
+        max-width: 750px;
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+    
+    .mobile-header {
+        display: none;
+    }
+  
+}
+
+/* SMALL
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .col-s-12 {
+    width: 100%;
+}
+
+.col-s-10 {
+    width: 83.33%;
+}
+
+.col-s-9 {
+    width: 75%;
+}
+
+.col-s-8 {
+    width: 66.66%;
+}
+
+.col-s-6 {
+    width: 50%;
+}
+
+.col-s-4 {
+    width: 33.33%;
+}
+
+.col-s-3 {
+    width: 25%;
+}
+
+.col-s-2 {
+    width: 16.66%;
+}
+
+.col-s-1 {
+    width: 8.33%;
+}
+    
+    .fixed-header { 
+    display:none;
+    }
+  
+}
+
+/* EXTRA SMALL
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .col-xs-12 {
+    width: 100%;
+}
+
+.col-xs-10 {
+    width: 83.33%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-8 {
+    width: 66.66%;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-4 {
+    width: 33.33%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-2 {
+    width: 16.66%;
+}
+
+.col-xs-1 {
+    width: 8.33%;
+}
+  
+}
