@@ -137,7 +137,6 @@ ol, ul {
     width:100%;
     text-align: center;
 }
-
 .mobile-header ul li {
     display: block;
     width: 100%;
@@ -282,27 +281,130 @@ justify-content: flex-start;
 }
 
 .opinie-kontener {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
 }
 
 .opinie-kontener img {
-    width: calc(100%/3);
-    padding: 0 20px;
+width: calc(100%/3);
+padding: 0 20px;
+}
+
+/* PODSTRONA KONTAKT "Banner główny" */
+
+.banner-glowny-kontakt {
+ width:100%;
+ height:70vh;
+ background-image: url("img/siedziba-firmy.jpg");
+ background-size: cover;
+ background-position: center;
+ color: #ff9800;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ text-shadow: 1px 1px 0 #000;
+    }
+
+ /* Sekcja dane adresowe + formularz */
+.sekcja-dane-formularz {
+    width:100%;
+    height:60vh;
+    display:flex;
+    background: #6d6d6d;
+    }
+ .sekcja-dane-formularz-lewa {
+    width:30%;
+    height:100%;
+    background: #ff9800;
+    text-align: center;
+    font-size: 17px;
+    line-height: 2;
+    padding: 90px 0;
+    }
+
+ .sekcja-dane-formularz-prawa {
+    width: 70%;
+    background: #6d6d6d;
+    margin: 100px 0 0 0px;
+    padding-left: 275px;
+
+    }
+    
+ .sekcja-dane-formularz-prawa input {
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 2px solid #ff9800;
+    padding: 8px;
+    width: 50%;       
+}
+ .box-dane{
+    margin: 10px 50px;
+	padding: 10px 50px;
+    background: #ffc947;
+    }
+
+ .sekcja-dane-formularz-prawa strong {
+	font-weight: 600;
+	line-height: 10px;
+}	
+
+.button {
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 16px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	background: #ff9800;
+	color: #424242;
+}
+/* Sekcja Mapa */
+.sekcja-mapa {
+    width:100%;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    }
+
+
+   /* PODSTRONA Realizacje  */
+
+.sekcja-realizacje {
+	width:100%;
+	height:100vh;
+	background-image: url("img/siedziba-firmy.jpg");
+	background-size: cover;
+	background-position: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sekcja-realizacje h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.sekcja-realizacje img {
+    width: 20%;
+    height: 35%;
+    padding: 20px 10px;
 }
 
 /* Stopka */
-
 .stopka {
-width:100%;
-height:30vh;
-background: #ff9800;
-display:flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-around;
+	width:100%;
+	height:30vh;
+	background: #ff9800;
+	height:30vh;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .stopka-kol-1, .stopka-kol-2, .stopka-kol-3, .stopka-kol-4 {
@@ -487,7 +589,7 @@ justify-content: space-around;
     .mobile-header {
         display: none;
     }
-    
+
 }
 
 /* 
