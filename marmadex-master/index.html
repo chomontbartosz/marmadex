@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Metadane  --> 
-<title>Tytuł strony</title>
+<title>MARMMADEX</title>
 <meta name="description" content="X">
 <meta name="keywords" content="X">
 <meta property="og:title" content="X">
@@ -18,7 +18,13 @@
  <link rel="canonical" href="X">  
   
 <!-- Stylesheets -->
+<link rel="stylesheet" href="grid.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    
+<!-- Scripts & Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     
 <!-- FAVICON  -->
 <link rel="icon" href="files/favicon.ico">
@@ -53,10 +59,10 @@
     <a href="index.html"><img src="img/logo.jpg" class="logo"></a>
         <ul>
             <li><a href="index.html">Strona główna</a></li>
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Usługi</a></li>
-            <li><a href="#">Referencje</a></li>
-            <li><a href="#">Opinie</a></li>
+            <li><a href="#o-nas">O nas</a></li>
+            <li><a href="#uslugi">Usługi</a></li>
+            <li><a href="#referencje">Referencje</a></li>
+            <li><a href="#opinie">Opinie</a></li>
             <li><a href="realizacje.html">Realizacje</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -67,9 +73,7 @@
 <div class="mobile-header">
     <div class="mobile-logo-container">
             <img src="img/logo.jpg" class="mobile-logo">
-            <span class="hamburger" onclick="mobileMenu()">
-            X
-            </span>
+            <span class="hamburger" onclick="mobileMenu()"></span>
         </div>
         <ul id="mobile-menu">
             <li><a href="index.html">Strona główna</a></li>
@@ -84,58 +88,235 @@
 
 <!-- BANNER GŁÓWNY
 ================================================= -->
-<div class="sekcja-glowna">
+<div class="sekcja-glowna" data-vide-bg="intro.mp4">
     <div class="overlay">
-        <h1>Banner główny</h1>
+        <h1 style="text-align:center">SKONTAKTUJ SIĘ Z NAMI</h1>
     </div>
 </div>
     
 <!-- O NAS 
 ================================================== --> 
-<div class="sekcja-o-nas">
-    <div class="sekcja-o-nas-lewa col-4">x</div>
-    <div class="sekcja-o-nas-prawa col-8">
-        <h2>O nas</h2>
-        <p>Quisque placerat consequat finibus. Curabitur semper sodales orci pellentesque vehicula. Nullam augue sem, aliquam quis elit eu, viverra mattis urna. Duis ligula lorem, vehicula nec cursus porta, congue vel sem. Aliquam rhoncus vestibulum orci a lacinia. Cras nec turpis et est facilisis lacinia et a mi. Aliquam bibendum iaculis augue, molestie pulvinar mi pharetra quis. Maecenas suscipit ipsum at ex ultrices pharetra. Proin ultrices sit amet dolor quis dignissim. Nunc elit risus, euismod at tincidunt quis, faucibus a metus. Fusce ut fermentum ligula. Aenean volutpat felis quam, id pretium dui interdum quis. Suspendisse vestibulum aliquam nisl, vel pharetra turpis interdum lobortis. Vestibulum efficitur rutrum ante, porta consequat nulla lacinia vestibulum. In pellentesque mauris nec nulla vestibulum, quis scelerisque ex finibus.
-        </p>
+                                                     
+    <div class="o-nas" id="o-nas">
+        <div class="container" style="height:100%">
+            <div class="row" style="height:100%">
+                <div class="col-l-4 no-padding" style="background:url('https://www.scienceabc.com/wp-content/uploads/ext-www.scienceabc.com/wp-content/uploads/2015/10/smile-2.jpg-.jpg'); background-position: right; background-size:cover">
+                    <div class="overlay2">
+                        <h1>Historia Magdy</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        </p>
+                    </div>    
+                </div>
+                 <div class="col-l-4 no-padding" style="background:url('https://media.istockphoto.com/photos/be-so-good-you-become-your-own-source-of-inspiration-picture-id1290528178?b=1&k=20&m=1290528178&s=170667a&w=0&h=ILOZEnHzV2WGCGHWzOl-nIgKsk_-GiysByzZ3ZGIFpk='); background-position: center; background-size:cover">
+                    <div class="overlay2">
+                        <h1>Historia Firmy</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        </p>
+                     </div>  
+                </div>
+                <div class="col-l-4 no-padding" style="background:url('https://cdn.modernghana.com/images/content/911201823619_man1.jpg'); background-position: right; background-size:cover">
+                    <div class="overlay2">
+                        <h1>Historia Marcina</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </div>
     </div>
-</div>
     
 <!-- USŁUGI
 ================================================== --> 
-<div class="sekcja-uslugi">
-    <h2>Usługi</h2>
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-    <img src="img/blank-600-325.webp">
-</div>
 
-<!-- REFERENCJE
-================================================== --> 
-<div class="sekcja-referencje">
-    <h2>Referencje</h2>
-    <div class="referencje-kontener">
-        <img src="img/blank-600-325.webp">
-        <img src="img/blank-600-325.webp">
-        <img src="img/blank-600-325.webp">
+<div class="o-row t-job-offers__offers" id="uslugi">
+    <div class="o-col o-col--lg50">
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="o-col o-col--lg50">
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
+        <div class="c-offer t-job-offers__item">
+            <a ><strong>Administrator baz danych, </strong> Warszawa
+                <span class="c-offer__arrow">
+                    <img class="c-offer__icon" src="images/gt.svg" alt="" width="10" height="16">
+                </span>
+            </a>
+        </div>
     </div>
 </div>
     
-<!-- OPINIE
+<!-- OFERTY PRACY BACKUP
+==================================================
+<div class="t-feature u-bg-light" style="background:#FF8201; color:#fff">
+    <div class="o-container">
+        <div class="o-row o-row--center-y">
+            <div class="o-col o-col--md50 t-feature__first-col">
+                <img src="img/koparka.png" alt="">
+            </div>
+            <div class="o-col o-col--md50 u-text-right">
+                <h2 class="c-heading c-heading--level2">Aktualne oferty pracy</h2>
+                <span class="c-label" style="color:#000">MARMADEX</span>
+                <p class="t-feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur quam, aperiam, quod possimus officiis repellendus perferendis ea enim illo aliquam minima ducimus. Illo ex odio dolorem possimus!</p>
+                <a class="c-btn c-btn--accent" href="#">Sprawdź co jeszcze mamy</a>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+    
+<!-- OFERTY PRACY NOWE
 ================================================== --> 
-<div class="sekcja-opinie">
-    <h2>Opinie</h2>
-    <div class="opinie-kontener">
-        <img src="img/blank-600-325.webp">
-        <img src="img/blank-600-325.webp">
-        <img src="img/blank-600-325.webp">
+<div class="sekcja-oferty">
+    
+   <div class="col-l-4 col-s-12" style="display:flex; align-items:center; justify-content:center"> 
+        <img src="img/koparka.png" style="max-width:100%">
+    </div>
+ <div class="col-l-8 col-s-12" style="display:flex; flex-direction: column; align-items: center; padding: 50px 0">   
+    <h2 style="color:#fff">Aktualne oferty pracy</h2> 
+    <div class="data-section">
+        <div class="data-data">
+            <div class="data-container">
+                <div id="expand1" style="display:flex; align-items:center; justify-content: space-between; cursor:pointer">
+                    <h3>Nazwa stanowiska</h3>
+                     <div class="arrow" id="arrow1" style="text-align:right;"><b>V</b></div>
+                </div>
+                <div class="clipper" id="clipper1">
+                    <div class="insider">
+                        <p>Przykładowy opis</p>
+                        <a href="#">Wyświetl ogłoszenie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="data-section">
+        <div class="data-data">
+            <div class="data-container">
+                <div id="expand2" style="display:flex; align-items:center; justify-content: space-between; cursor:pointer">
+                    <h3>Nazwa stanowiska</h3>
+                     <div class="arrow" id="arrow2" style="text-align:right;"><b>V</b></div>
+                </div>
+                <div class="clipper" id="clipper2">
+                    <div class="insider">
+                        <p>Przykładowy opis</p>
+                        <a href="#">Wyświetl ogłoszenie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="data-section">
+        <div class="data-data">
+            <div class="data-container">
+                <div id="expand3" style="display:flex; align-items:center; justify-content: space-between; cursor:pointer">
+                    <h3>Nazwa stanowiska</h3>
+                     <div class="arrow" id="arrow3" style="text-align:right;"><b>V</b></div>
+                </div>
+                <div class="clipper" id="clipper3">
+                    <div class="insider">
+                        <p>Przykładowy opis</p>
+                        <a href="#">Wyświetl ogłoszenie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+</div>
+    
+<!-- REFERENCJE
+================================================== --> 
+<div class="sekcja-referencje" id="referencje">
+    <h2>Referencje</h2>
+    <p style="padding: 50px 250px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet dapibus ligula. Fusce leo eros, aliquet ut nunc tristique, euismod tempor risus. Praesent maximus venenatis lorem eget laoreet. Donec consectetur lobortis velit, eu finibus tortor eleifend vel. Proin consequat nulla ante, et varius nisl efficitur quis. Suspendisse hendrerit sodales ante. Duis porttitor, dolor id tempus pharetra, est leo finibus.
+    </p>
+<!--    <div class="referencje-kontener">
+        <img src="img/ref-1.jpg" style="max-width:100%">
+        <img src="img/ref-2.jpg" style="max-width:100%">
+        <img src="img/ref-3.jpg" style="max-width:100%">
+    </div>
+
+-->
+
+<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell ref-1"></div>
+    <div class="gallery-cell ref-2"></div>
+    <div class="gallery-cell ref-3"></div>
+  </div>
+
+</div>
+    
+<!-- OPINIE NEW
+================================================== --> 
+
+<div class="sekcja-opinie" id="opinie">
+    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="gallery-cell cell-1"></div>
+      <div class="gallery-cell cell-2"></div>
+      <div class="gallery-cell cell-3"></div>
     </div>
 </div>
 
@@ -173,7 +354,7 @@
 </div>
 
 
-<!-- Javascripts -->
+<!-- JAVASCRIPTS -->
 <script type="text/javascript">
     function mobileMenu() {
   var x = document.getElementById("mobile-menu");
@@ -185,6 +366,50 @@
 }
 </script>
 
+<!-- Job offers expanding -->
+<script>
+$(document).ready(function() {
+    $('#expand1').click(function() {
+    $('#clipper1').toggleClass('data-open');
+    $('#arrow1').toggleClass('opened');
+});
+});
+    
+$(document).ready(function() {
+    $('#expand2').click(function() {
+    $('#clipper2').toggleClass('data-open');
+    $('#arrow2').toggleClass('opened');
+});
+});
+    
+$(document).ready(function() {
+    $('#expand3').click(function() {
+    $('#clipper3').toggleClass('data-open');
+    $('#arrow3').toggleClass('opened');
+});
+});
+</script>
+    
+<!-- Accordion -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+<!-- ??? -->
+<script src="jquery.vide.js"></script>
     
 </body>
 </html>
